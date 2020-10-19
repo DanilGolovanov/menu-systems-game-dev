@@ -155,8 +155,8 @@ public class OptionsMenu : MonoBehaviour
         //------SET DEFAULT SETTINGS OTHERWISE (if nothing to load)
         if (!PlayerPrefs.HasKey("fullscreen"))
         {
-            PlayerPrefs.SetInt("fullscreen", 0);
-            Screen.fullScreen = false;
+            PlayerPrefs.SetInt("fullscreen", 1);
+            Screen.fullScreen = true;
 
         }
         else
